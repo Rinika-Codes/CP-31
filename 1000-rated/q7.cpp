@@ -16,7 +16,7 @@ void solve(){
     vector<ll> long_a(2*n + 1, 0);
     vector<ll> long_b(2*n + 1, 0);
 
-    // Array a
+
     ll cnt = 1;
 
     for(ll i = 1; i < n; i++){
@@ -31,7 +31,7 @@ void solve(){
 
     long_a[arr[n-1]] = max(long_a[arr[n-1]], cnt);
 
-    // Array b
+  
     cnt = 1;
 
     for(ll i = 1; i < n; i++){
@@ -46,7 +46,7 @@ void solve(){
 
     long_b[brr[n-1]] = max(long_b[brr[n-1]], cnt);
 
-    // Find answer
+   
     ll ans = 1;
 
     for(ll i = 1; i <= 2*n; i++){
